@@ -1,4 +1,4 @@
-name = "xugou-app"
+name = "app-uptime-mon-xugou"
 main = "backend/src/index.ts"
 compatibility_date = "2025-03-10"
 compatibility_flags = ["nodejs_compat"]
@@ -7,8 +7,8 @@ minify = true # 生产环境压缩代码
 
 # 设置自定义域名
 routes = [
-  { pattern = "xugou.mdzz.uk", custom_domain = true },
-  { pattern = "api.xugou.mdzz.uk", custom_domain = true }
+  { pattern = "ut.chrisulo.cc", custom_domain = true },
+  { pattern = "ut.chrisulo.com", custom_domain = true }
 ]
 
 # 添加定时触发器，每分钟执行一次监控检查
@@ -17,8 +17,8 @@ crons = ["* * * * *"]
 
 [[d1_databases]]
 binding = "DB"
-database_name = "xugou_db"
-database_id = "32a2ca5f-3a77-4b08-965e-804612557880"
+database_name = "uptime-mon-xugou"
+database_id = "fed8334b-c6f6-45b0-83cd-8202345e960a"
 
 [assets]
 binding = "ASSETS"
